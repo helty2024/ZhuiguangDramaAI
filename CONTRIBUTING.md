@@ -1,20 +1,17 @@
 # Contributing
 
-Thanks for helping improve **ZhuiguangDramaAI（追光影视）**.
+本仓库公开内容为 **文档 + Releases 安装包**，**不包含应用源码**。
 
-## Docs & links
+## 文档修正
 
-- Fix typos, broken download links, or outdated SHA256 in `README.md`
-- Keep feature claims aligned with published Release notes — do not invent capabilities
+欢迎通过 Pull Request 修正 `README.md` 中的错字、失效下载链接或过期 SHA256。功能描述请与已发布的 Release 说明保持一致，勿编造能力。
 
-## Bugs
+## 问题反馈
 
-Open an Issue with:
+如需报告安装 / 运行问题，请开 [Issue](https://github.com/helty2024/ZhuiguangDramaAI/issues)，并尽量附上：
 
-- OS version (Windows 10/11 or macOS arm64)
-- Installer filename + SHA256
-- Steps to reproduce and screenshots if possible
+- 系统版本（Windows 10/11 或 macOS arm64）
+- 安装包文件名与 SHA256
+- 复现步骤（可附截图）
 
-## Binaries / app code
-
-Client binaries are published via [Releases](https://github.com/helty2024/ZhuiguangDramaAI/releases). For source-level changes, open an Issue first so maintainers can confirm the public contribution surface.
+客户端二进制仅通过 [Releases](https://github.com/helty2024/ZhuiguangDramaAI/releases) 分发；源码级改动不在本仓接受范围。

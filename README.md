@@ -1,13 +1,29 @@
 # 追光影视 · ZhuiguangDramaAI
 
-> **桌面端 AI 短剧工作流客户端**（Electron）  
-> 用 Seedance Skill OS + Grok Imagine 框架，把剧本 / 分镜 / 图生视频放进同一套本地工作区。
+> **从创意到短剧成片，AI 在本地桌面帮你走完全程。**  
+> *From idea to finished short drama — AI runs the workflow on your desktop.*
+
+桌面端 AI 短剧工作流客户端（Electron）。内置 **Seedance Skill OS** 与 **Grok Imagine** 框架，把立项、风格、剧本 / 分镜与图生视频收进同一套本地工作区。
 
 [![Release](https://img.shields.io/github/v/release/helty2024/ZhuiguangDramaAI?style=flat-square&label=release)](https://github.com/helty2024/ZhuiguangDramaAI/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20arm64-blue?style=flat-square)](https://github.com/helty2024/ZhuiguangDramaAI/releases/tag/v2.3.0)
 [![Downloads](https://img.shields.io/github/downloads/helty2024/ZhuiguangDramaAI/total?style=flat-square)](https://github.com/helty2024/ZhuiguangDramaAI/releases)
 
-**English:** Desktop Electron client for AI short-drama production. Latest build ships **Seedance Skill OS v6.7.0** (acting / scene patches) and **grok-imagine-video-2.1**, with direct installers on [GitHub Releases](https://github.com/helty2024/ZhuiguangDramaAI/releases/tag/v2.3.0).
+---
+
+## 预览
+
+<p align="center">
+  <img src="docs/screenshots/01-project-launchpad.png" alt="项目启动台 · 空状态" width="720" />
+  <br />
+  <em>项目启动台 — 从新建第一个短剧项目开始</em>
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/02-style-presets.png" alt="设置 · 风格预设" width="720" />
+  <br />
+  <em>设置 · 风格预设 — 10 种视觉风格一键注入生成提示</em>
+</p>
 
 ---
 
@@ -15,15 +31,13 @@
 
 - [这是什么](#这是什么)
 - [当前版本亮点（v2.3.0）](#当前版本亮点v230)
-- [下载](#下载) ⭐
+- [下载](#下载)
 - [安装](#安装)
 - [快速开始](#快速开始)
 - [应用内更新](#应用内更新)
 - [系统要求](#系统要求)
 - [版本历史](#版本历史)
 - [常见问题](#常见问题)
-- [反馈与贡献](#反馈与贡献)
-- [许可](#许可)
 
 ---
 
@@ -31,7 +45,7 @@
 
 **追光影视（ZhuiguangDramaAI）** 是一款本地安装的短剧创作客户端：管理项目工作区、同步技能 / 框架模板，并接入视频与图像工作流（当前正式模板为 **seedance-2.0** 与 **grok-imagine-video-2.1**）。
 
-它和「只发技能包 / CLI」的仓库不同：本仓库以 **可安装的桌面发行包** 为主入口，源码与构建流水线可能分阶段公开；日常使用请直接下载 [Releases](https://github.com/helty2024/ZhuiguangDramaAI/releases) 中的安装包。
+本仓库公开内容为 **文档说明 + [Releases](https://github.com/helty2024/ZhuiguangDramaAI/releases) 安装包**，**不包含应用源码**。日常使用请直接下载发行包，无需自行编译。
 
 ### 它适合谁
 
@@ -45,10 +59,10 @@
 
 ## 当前版本亮点（v2.3.0）
 
-来自正式 Release 说明（不另编功能）：
+来自正式 Release 说明：
 
 - **Seedance Skill OS v6.7.0**（seedance-2.0 工作流内核）
-- **Higgs 抽取补丁**：表演（acting）与场景审计（scene-audit）；已去除第三方平台预设名
+- **Higgs 抽取补丁**：表演（acting）与场景审计（scene-audit）
 - **工作流精简**：仅保留 **seedance-2.0** + **grok-imagine-video-2.1**（模板侧不再带 grok-imagine-video-1.5）
 - **继承 2.2**：图生图相关热修、仿真人写实种子、密码门控 GitHub 更新通道、同目录覆盖安装
 - **模板同步**：`.template-version` → **5**；升级后可 force 覆盖 skills / frameworks / prompts / styles
@@ -118,9 +132,9 @@ Get-FileHash .\ZhuiguangDramaAI-2.3.0-Win10-11-x64-Setup.exe -Algorithm SHA256
 ## 快速开始
 
 1. 安装并启动「追光影视」
-2. 按客户端引导登录 / 配置所需 API（具体表单项以应用内为准；**本 README 不代填密钥**）
-3. 新建或打开项目工作区；升级后客户端会按模板版本同步 skills / frameworks
-4. 在设置中确认启用的工作流为 **seedance-2.0** / **grok-imagine-video-2.1**（若仍看到已移除的旧框架名，多为本地 AppData 残留目录，删除对应 `frameworks` 子目录后刷新即可）
+2. 按客户端引导配置所需 API（具体表单项以应用内为准；**本 README 不代填密钥**）
+3. 在「项目启动台」新建短剧项目；升级后客户端会按模板版本同步 skills / frameworks
+4. 在「设置 → 风格预设」选用视觉风格；确认工作流为 **seedance-2.0** / **grok-imagine-video-2.1**（若仍看到已移除的旧框架名，多为本地 AppData 残留目录，删除对应 `frameworks` 子目录后刷新即可）
 
 > 视频 / 生图等能力按服务商计费。发布与打包过程**不会**替你代跑扣积分生成。
 
@@ -131,7 +145,7 @@ Get-FileHash .\ZhuiguangDramaAI-2.3.0-Win10-11-x64-Setup.exe -Algorithm SHA256
 自 2.2 起，设置里的更新通道支持 **密码门 → 拉取 GitHub 安装包直链**。
 
 - 回退下载地址形态：`https://github.com/helty2024/ZhuiguangDramaAI/releases/download/<tag>/<file>`
-- 仓库现为 **Public**，匿名即可下载 Release 资产
+- 仓库为 **Public**，匿名即可下载 Release 资产
 - 门禁密码以本机 `update-config.json` 中的 `update_download_password` 为准（勿把长期 `github_token` 打进公开包）
 
 ---
@@ -162,34 +176,25 @@ Get-FileHash .\ZhuiguangDramaAI-2.3.0-Win10-11-x64-Setup.exe -Algorithm SHA256
 
 ## 常见问题
 
+### 本仓库有应用源码吗？
+
+**没有。** 本仓库仅公开 **README / 说明文档** 与 **Releases 安装包**，不提供客户端源码，也无法从本仓自行编译出完整应用。请使用 [Releases](https://github.com/helty2024/ZhuiguangDramaAI/releases) 中的官方安装包。
+
 ### 下载很慢 / 被墙？
+
 直链依赖 GitHub。可换网络、镜像，或把同一文件放到自有 CDN 后改客户端 `fallback_download_url`。
 
 ### Mac 提示「无法打开，因为无法验证开发者」？
+
 本版未公证。按系统提示在「隐私与安全性」中选择仍要打开，或右键 → 打开。
 
 ### 设置里还能看到 grok-imagine-video-1.5？
+
 v2.3.0 **模板已移除**该框架。若列表仍出现，通常是 `%APPDATA%\ZhuiguangDramaAI\workspace\frameworks\`（或 Mac 对应 Application Support）下的**旧目录残留**，删掉该文件夹后重开设置即可。
 
 ### 安装时 Abort / 无法覆盖？
+
 多见于旧目录缺少合法 marker。请先卸载旧「追光影视」，再装 2.3.0。
-
-### 本仓库有完整应用源码吗？
-当前公开内容以 **README + Release 安装包** 为主。若你需要源码级协作，请通过 Issue 说明场景，由维护者评估公开范围。
-
----
-
-## 反馈与贡献
-
-- **Bug / 安装问题**：开 [GitHub Issue](https://github.com/helty2024/ZhuiguangDramaAI/issues)，请附：系统版本、安装包文件名、SHA256、截图与复现步骤
-- **功能建议**：同样用 Issue；请说明工作流（Seedance / Grok）与期望结果
-- **PR**：欢迎修正文档、链接、校验信息；涉及客户端二进制请先开 Issue 对齐
-
----
-
-## 许可
-
-本仓库暂未附加 SPDX 许可证文件。下载与使用发行包前，请以维护者说明与应用内条款为准；若需明确开源许可证（如 MIT / Apache-2.0），请开 Issue 与维护者确认后再添加 `LICENSE`。
 
 ---
 
