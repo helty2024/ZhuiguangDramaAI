@@ -1,0 +1,6 @@
+# Ignore local tooling leftovers
+.DS_Store
+Thumbs.db
+*.exe
+*.dmg
+*.zip

@@ -1,26 +1,20 @@
-﻿# 追光影视 Windows 安装包 — 第一版（GitHub Release 候选）
+# Release notes index
 
-- 产品版本（package.json）: 4.0.8
-- GitHub 建议 tag: v1.0.0 或 v4.0.8-patched-20261023
-- 构建时间（Asia/Shanghai）: 2026-10-23 10:37
-- 产物: ZhuiguangDramaAI-4.0.8-Win10-11-x64-Setup.exe
-- 大小: 139935619 bytes (~133.5 MB)
-- SHA256: ca88a282de21724123b63c267a43e797363a3372726f19749c94dff94c6b9548
-- 构建命令: python installer_build/build_installer.py
-- 构建工具: NSIS 3.13（installer_build/tools/nsis-3.13）
-- 源目录: outputs/ZhuiguangDramaAI（现场已打补丁目录）
+> 最新发行说明以 GitHub Releases 为准，勿把本文件当作当前版本 changelog。
 
-## 本包包含的补丁（相对 2026-10-20 旧 Setup）
-- uncertain / 禁叠单 / 超时相关逻辑
-- 参考图压缩
-- 原生模块正确 unpack（app.asar ~30.8MB + app.asar.unpacked 含 better-sqlite3 / sharp-win32-x64）
-- 未打入 bak-broken-packed-natives 坏包
+## Latest
 
-## 未包含
-- 各类 .bak / app.asar.bak* / 调试 _patch_* 脚本
-- darwin-arm64 原生目录
-- 用户数据 / API Key
+- **[v2.3.0](https://github.com/helty2024/ZhuiguangDramaAI/releases/tag/v2.3.0)** — 追光影视 2.3.0（Win Setup + macOS arm64 DMG/ZIP）
+  - Win Setup SHA256: `c174ef1759f5d35a09a2c710b0db800461565228aa0568c786b41e83d34d0be2`
+  - Mac DMG SHA256: `e6eb25e92dbf757ba06bb8c0f501957b924b8b627186d6cd68162b7211f9fba1`
+  - Mac ZIP SHA256: `d080f2762ace88e2625d9f2495875fb3b4cc904500222e502712b76fdcc91642`
 
-## 说明
-- 旧版 outputs 根目录下的 Setup.exe（2026-10-20）不含今日补丁，请以本 release-v1 为准。
-- 未签名（NotSigned），安装需管理员（all-users → Program Files\ZhuiguangDramaAI）。
+## Earlier archive (v1 build memo)
+
+以下内容保留自仓库最初的 Windows 第一版构建备忘（产品壳版本曾记为 4.0.8 / tag v1.0.0），**已被后续 2.x Release 取代**：
+
+- 产物名示例：`ZhuiguangDramaAI-4.0.8-Win10-11-x64-Setup.exe`
+- 历史 SHA256：`ca88a282de21724123b63c267a43e797363a3372726f19749c94dff94c6b9548`
+- 说明：NSIS 安装、未签名、需管理员；细节见当时 Release [v1.0.0](https://github.com/helty2024/ZhuiguangDramaAI/releases/tag/v1.0.0)
+
+完整列表：[https://github.com/helty2024/ZhuiguangDramaAI/releases](https://github.com/helty2024/ZhuiguangDramaAI/releases)
