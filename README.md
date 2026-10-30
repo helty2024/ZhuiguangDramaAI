@@ -6,7 +6,7 @@
 桌面端 AI 短剧工作流客户端（Electron）。内置 **Seedance Skill OS** 与 **Grok Imagine** 框架，把立项、风格、剧本 / 分镜与图生视频收进同一套本地工作区。
 
 [![Release](https://img.shields.io/github/v/release/helty2024/ZhuiguangDramaAI?style=flat-square&label=release)](https://github.com/helty2024/ZhuiguangDramaAI/releases/latest)
-[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20arm64-blue?style=flat-square)](https://github.com/helty2024/ZhuiguangDramaAI/releases/tag/v2.3.0)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20arm64-blue?style=flat-square)](https://github.com/helty2024/ZhuiguangDramaAI/releases/tag/v2.4.1)
 [![Downloads](https://img.shields.io/github/downloads/helty2024/ZhuiguangDramaAI/total?style=flat-square)](https://github.com/helty2024/ZhuiguangDramaAI/releases)
 
 ---
@@ -30,7 +30,7 @@
 ## 目录
 
 - [这是什么](#这是什么)
-- [当前版本亮点（v2.3.0）](#当前版本亮点v230)
+- [当前版本亮点（v2.4.1）](#当前版本亮点v241)
 - [下载](#下载)
 - [安装](#安装)
 - [快速开始](#快速开始)
@@ -51,55 +51,55 @@
 
 | 你想… | 建议 |
 |------|------|
-| 在 Windows / Apple Silicon Mac 上装客户端开写 | 下最新 [v2.3.0](https://github.com/helty2024/ZhuiguangDramaAI/releases/tag/v2.3.0) |
+| 在 Windows / Apple Silicon Mac 上装客户端开写 | 下最新 [v2.4.1](https://github.com/helty2024/ZhuiguangDramaAI/releases/tag/v2.4.1) |
 | 核对安装包是否被篡改 | 用同名 `.sha256` 或下文校验值 |
 | 跟版本说明 / 变更 | 看对应 Release 正文与本页「版本历史」 |
 
 ---
 
-## 当前版本亮点（v2.3.0）
+## 当前版本亮点（v2.4.1）
 
 来自正式 Release 说明：
 
-- **Seedance Skill OS v6.7.0**（seedance-2.0 工作流内核）
-- **Higgs 抽取补丁**：表演（acting）与场景审计（scene-audit）
-- **工作流精简**：仅保留 **seedance-2.0** + **grok-imagine-video-2.1**（模板侧不再带 grok-imagine-video-1.5）
-- **继承 2.2**：图生图相关热修、仿真人写实种子、密码门控 GitHub 更新通道、同目录覆盖安装
-- **模板同步**：`.template-version` → **5**；升级后可 force 覆盖 skills / frameworks / prompts / styles
+- **模型配置弹窗**：图像 / 视频标题改为「图像模型配置」「视频模型配置」；去掉官方预设 pill；支持添加自定义服务商
+- **资产卡 UI**：左上角生成标签高对比底色 + 浅色字；角色卡名称 / 按钮 / 标签分行，避免重叠
+- **小说体切换**：分镜工具条「小说体 / 标准」点击后高亮即时同步
+- **VCE 镜头衔接**：右下角入口**仅在「视频制作」页显示**，其它版块隐藏
+- **继承 2.4.0**：Seedance Skill OS、VCE 与 beforeGen、视频提示词标准 / 小说体、TEMPLATE_VERSION=**7**、无 grok-imagine-video-1.5、星标图标
 - **双端包**：Windows x64 Setup + macOS arm64 DMG / ZIP
 
 ---
 
 ## 下载
 
-**最新版：[v2.3.0](https://github.com/helty2024/ZhuiguangDramaAI/releases/tag/v2.3.0)** · 全部历史包见 [Releases](https://github.com/helty2024/ZhuiguangDramaAI/releases)
+**最新版：[v2.4.1](https://github.com/helty2024/ZhuiguangDramaAI/releases/tag/v2.4.1)** · 全部历史包见 [Releases](https://github.com/helty2024/ZhuiguangDramaAI/releases)
 
 ### Windows 10 / 11（x64）
 
 | 文件 | 直链 |
 |------|------|
-| Setup 安装包 | [ZhuiguangDramaAI-2.3.0-Win10-11-x64-Setup.exe](https://github.com/helty2024/ZhuiguangDramaAI/releases/download/v2.3.0/ZhuiguangDramaAI-2.3.0-Win10-11-x64-Setup.exe) |
-| SHA256 文件 | […Setup.exe.sha256](https://github.com/helty2024/ZhuiguangDramaAI/releases/download/v2.3.0/ZhuiguangDramaAI-2.3.0-Win10-11-x64-Setup.exe.sha256) |
+| Setup 安装包 | [ZhuiguangDramaAI-2.4.1-Win10-11-x64-Setup.exe](https://github.com/helty2024/ZhuiguangDramaAI/releases/download/v2.4.1/ZhuiguangDramaAI-2.4.1-Win10-11-x64-Setup.exe) |
+| SHA256 文件 | […Setup.exe.sha256](https://github.com/helty2024/ZhuiguangDramaAI/releases/download/v2.4.1/ZhuiguangDramaAI-2.4.1-Win10-11-x64-Setup.exe.sha256) |
 
 ```
 SHA256 (Setup.exe)
-c174ef1759f5d35a09a2c710b0db800461565228aa0568c786b41e83d34d0be2
+8ff923fd77e9e2d1d601e09963c3953ae98b0d4adfd12e5c61f3b9ac122b15c4
 ```
 
 ### macOS（Apple Silicon / arm64）
 
 | 文件 | 直链 |
 |------|------|
-| **推荐** DMG | [ZhuiguangDramaAI-2.3.0-macOS-arm64.dmg](https://github.com/helty2024/ZhuiguangDramaAI/releases/download/v2.3.0/ZhuiguangDramaAI-2.3.0-macOS-arm64.dmg) |
-| 备用 ZIP | [ZhuiguangDramaAI-2.3.0-macOS-arm64.zip](https://github.com/helty2024/ZhuiguangDramaAI/releases/download/v2.3.0/ZhuiguangDramaAI-2.3.0-macOS-arm64.zip) |
-| 说明 | [RELEASE-NOTES-MAC-v2.3.0.md](https://github.com/helty2024/ZhuiguangDramaAI/releases/download/v2.3.0/RELEASE-NOTES-MAC-v2.3.0.md) |
+| **推荐** DMG | [ZhuiguangDramaAI-2.4.1-macOS-arm64.dmg](https://github.com/helty2024/ZhuiguangDramaAI/releases/download/v2.4.1/ZhuiguangDramaAI-2.4.1-macOS-arm64.dmg) |
+| 备用 ZIP | [ZhuiguangDramaAI-2.4.1-macOS-arm64.zip](https://github.com/helty2024/ZhuiguangDramaAI/releases/download/v2.4.1/ZhuiguangDramaAI-2.4.1-macOS-arm64.zip) |
+| 说明 | [RELEASE-NOTES-MAC-v2.4.1.md](https://github.com/helty2024/ZhuiguangDramaAI/releases/download/v2.4.1/RELEASE-NOTES-MAC-v2.4.1.md) |
 
 ```
 SHA256 (DMG)
-e6eb25e92dbf757ba06bb8c0f501957b924b8b627186d6cd68162b7211f9fba1
+7f71c4fc0f2d8871d8bd1b0dc27a87bf48a33fdcadc0cd2f9d147e4e45a8cbce
 
 SHA256 (ZIP)
-d080f2762ace88e2625d9f2495875fb3b4cc904500222e502712b76fdcc91642
+5e7f0fdcfbf4f7b1c95acdcee5cde5cdbf0ab34f2990b532716e7fa362bce1dc
 ```
 
 > 以上均为 GitHub `releases/download/...` **真直链**（可被浏览器或客户端直接拉取，无需分享页）。
@@ -111,14 +111,14 @@ d080f2762ace88e2625d9f2495875fb3b4cc904500222e502712b76fdcc91642
 ### Windows
 
 1. 关闭正在运行的「追光影视」
-2. 运行 `ZhuiguangDramaAI-2.3.0-Win10-11-x64-Setup.exe`（通常需管理员）
+2. 运行 `ZhuiguangDramaAI-2.4.1-Win10-11-x64-Setup.exe`（通常需管理员）
 3. 默认安装到 `C:\Program Files\ZhuiguangDramaAI`
 4. 若旧目录无合法安装标记导致无法覆盖：先在「应用和功能」卸载旧版，再装本版（勿直接手删 Program Files）
 
 PowerShell 校验示例：
 
 ```powershell
-Get-FileHash .\ZhuiguangDramaAI-2.3.0-Win10-11-x64-Setup.exe -Algorithm SHA256
+Get-FileHash .\ZhuiguangDramaAI-2.4.1-Win10-11-x64-Setup.exe -Algorithm SHA256
 ```
 
 ### macOS（arm64）
@@ -164,7 +164,9 @@ Get-FileHash .\ZhuiguangDramaAI-2.3.0-Win10-11-x64-Setup.exe -Algorithm SHA256
 
 | Tag | 摘要 |
 |-----|------|
-| **[v2.3.0](https://github.com/helty2024/ZhuiguangDramaAI/releases/tag/v2.3.0)** | Seedance Skill OS v6.7.0 + Higgs 补丁；Win + Mac；模板 version 5 |
+| **[v2.4.1](https://github.com/helty2024/ZhuiguangDramaAI/releases/tag/v2.4.1)** | 模型配置 / 资产卡 / 小说体 / VCE 仅视频页；Win + Mac；模板 version 7 |
+| [v2.4.0](https://github.com/helty2024/ZhuiguangDramaAI/releases/tag/v2.4.0) | Win Setup；VCE / 小说体提示词等 |
+| [v2.3.0](https://github.com/helty2024/ZhuiguangDramaAI/releases/tag/v2.3.0) | Seedance Skill OS v6.7.0 + Higgs 补丁；Win + Mac；模板 version 5 |
 | [v2.2.0](https://github.com/helty2024/ZhuiguangDramaAI/releases/tag/v2.2.0) | Win Setup；密码门更新等 |
 | [v2.1.0](https://github.com/helty2024/ZhuiguangDramaAI/releases/tag/v2.1.0) | Win Setup · Grok 2.1 |
 | [v2.0](https://github.com/helty2024/ZhuiguangDramaAI/releases/tag/v2.0) | Win + Mac |
@@ -190,12 +192,12 @@ Get-FileHash .\ZhuiguangDramaAI-2.3.0-Win10-11-x64-Setup.exe -Algorithm SHA256
 
 ### 设置里还能看到 grok-imagine-video-1.5？
 
-v2.3.0 **模板已移除**该框架。若列表仍出现，通常是 `%APPDATA%\ZhuiguangDramaAI\workspace\frameworks\`（或 Mac 对应 Application Support）下的**旧目录残留**，删掉该文件夹后重开设置即可。
+自 v2.3.0 起模板已移除该框架（v2.4.1 仍不包含）。若列表仍出现，通常是 `%APPDATA%\ZhuiguangDramaAI\workspace\frameworks\`（或 Mac 对应 Application Support）下的**旧目录残留**，删掉该文件夹后重开设置即可。
 
 ### 安装时 Abort / 无法覆盖？
 
-多见于旧目录缺少合法 marker。请先卸载旧「追光影视」，再装 2.3.0。
+多见于旧目录缺少合法 marker。请先卸载旧「追光影视」，再装 2.4.1。
 
 ---
 
-**追光影视 · ZhuiguangDramaAI** — 下载最新安装包 → [Releases · v2.3.0](https://github.com/helty2024/ZhuiguangDramaAI/releases/tag/v2.3.0)
+**追光影视 · ZhuiguangDramaAI** — 下载最新安装包 → [Releases · v2.4.1](https://github.com/helty2024/ZhuiguangDramaAI/releases/tag/v2.4.1)
