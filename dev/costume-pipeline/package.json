@@ -1,0 +1,14 @@
+{
+  "name": "@zhuiguang/costume-pipeline",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Maintainable costume asset pipeline source + unpaid regression tests for ZhuiguangDramaAI",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node scripts/costume-regression.mjs",
+    "test:costume": "node scripts/costume-regression.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
