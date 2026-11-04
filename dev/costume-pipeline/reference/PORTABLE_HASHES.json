@@ -1,0 +1,14 @@
+{
+  "reference/costume-mount-full.js": {
+    "bytes": 30752,
+    "sha256": "7fb5ba5fcb7b4fe5ba9892ab2fe01b550fe486991a60af6e3b5d91333c135341"
+  },
+  "reference/costume-mount.js": {
+    "bytes": 30752,
+    "sha256": "7fb5ba5fcb7b4fe5ba9892ab2fe01b550fe486991a60af6e3b5d91333c135341"
+  },
+  "portable-fe/D2CsWkmv.js": {
+    "bytes": 180975,
+    "sha256": "e3affba26c1d6eec4c5abe38d6dd8a4274ca487bdb7fec931d9bb6db2a648dab"
+  }
+}

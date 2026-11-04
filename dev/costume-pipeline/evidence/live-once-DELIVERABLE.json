@@ -1,0 +1,268 @@
+{
+  "startedAt": "2026-11-04T07:07:21.658Z",
+  "paidCalls": 1,
+  "generatePosts": [
+    {
+      "at": "2026-11-04T07:07:27.947Z",
+      "url": "http://127.0.0.1:14172/api/v1/costumes/15/generate-image",
+      "body": {
+        "episode_id": 12,
+        "use_character_reference": false
+      },
+      "isMock": false
+    }
+  ],
+  "navigationEvents": [],
+  "shots": [
+    {
+      "name": "01-before.png",
+      "at": "2026-11-04T07:07:27.940Z",
+      "url": "http://127.0.0.1:14172/drama/11/episode/1",
+      "beforeState": {
+        "url": "http://127.0.0.1:14172/drama/11/episode/1",
+        "mockOpts": null,
+        "lsMock": null,
+        "name": "LiveOnce-041695",
+        "badge": "待生成",
+        "hasImg": false,
+        "hasMask": false,
+        "btn": "生成服装图"
+      }
+    },
+    {
+      "name": "02-immediate-generating.png",
+      "at": "2026-11-04T07:07:32.023Z",
+      "url": "http://127.0.0.1:14172/drama/11/episode/1",
+      "immediate": {
+        "url": "http://127.0.0.1:14172/drama/11/episode/1",
+        "badge": "正在生成",
+        "hasMask": true,
+        "hasImg": false,
+        "err": ""
+      }
+    },
+    {
+      "name": "03-final.png",
+      "at": "2026-11-04T07:08:13.923Z",
+      "url": "http://127.0.0.1:14172/drama/11/episode/1",
+      "finalUi": {
+        "url": "http://127.0.0.1:14172/drama/11/episode/1",
+        "badge": "已生成",
+        "hasMask": false,
+        "hasImg": true,
+        "imgSrc": "http://127.0.0.1:14172/static/images/1c967c71-354b-4353-b18b-9267288b8c91.png?_zg=9",
+        "err": ""
+      },
+      "row": {
+        "id": 15,
+        "character_id": 18,
+        "drama_id": 11,
+        "name": "LiveOnce-041695",
+        "description": "cobalt blue ceremonial cloak with silver clasp and white trim unique-041695",
+        "use_character_reference": false,
+        "image_url": "static/images/1c967c71-354b-4353-b18b-9267288b8c91.png",
+        "local_path": "static/images/1c967c71-354b-4353-b18b-9267288b8c91.png",
+        "reference_images": null,
+        "prompt": null,
+        "final_prompt": "character 蕾欧娜, costume: LiveOnce-041695, cobalt blue ceremonial cloak with silver clasp and white trim unique-041695, full body costume reference sheet, clean background",
+        "sort_order": 0,
+        "status": "ready",
+        "result_source": "model",
+        "image_source": "model",
+        "task_id": 92,
+        "error_message": null,
+        "progress": 100,
+        "is_selected": false,
+        "created_at": "2026-11-04T07:07:21.700Z",
+        "updated_at": "2026-11-04T07:08:09.165Z"
+      }
+    }
+  ],
+  "results": {
+    "immediateGenerating": true,
+    "sameUrlImmediate": true,
+    "requestHasNoMock": true,
+    "paidCalls": 1,
+    "generatePostCount": 1,
+    "status": "ready",
+    "result_source": "model",
+    "task_id": 92,
+    "badge": "已生成",
+    "hasImg": true,
+    "error_message": null,
+    "final_prompt": "character 蕾欧娜, costume: LiveOnce-041695, cobalt blue ceremonial cloak with silver clasp and white trim unique-041695, full body costume reference sheet, clean background",
+    "promptMatchesDesc": true,
+    "sameUrlFinal": true,
+    "noNavAway": true,
+    "isModelReady": true,
+    "badgeIsGenerated": true,
+    "notPlaceholderBadge": true,
+    "imageNotMockSynthName": true,
+    "imageNotPortrait": true,
+    "PASS": true
+  },
+  "evidence": {
+    "panel": {
+      "hasInput": true,
+      "n": 8,
+      "url": "http://127.0.0.1:14172/drama/11/episode/1"
+    },
+    "createApi": {
+      "status": 200,
+      "id": 15,
+      "name": "LiveOnce-041695"
+    },
+    "costumeId": 15,
+    "costumeName": "LiveOnce-041695",
+    "costumeDesc": "cobalt blue ceremonial cloak with silver clasp and white trim unique-041695",
+    "hasCardInDom": true,
+    "before": {
+      "url": "http://127.0.0.1:14172/drama/11/episode/1",
+      "mockOpts": null,
+      "lsMock": null,
+      "name": "LiveOnce-041695",
+      "badge": "待生成",
+      "hasImg": false,
+      "hasMask": false,
+      "btn": "生成服装图"
+    },
+    "click": {
+      "ok": true,
+      "btn": "生成服装图",
+      "mockOpts": null
+    },
+    "immediate": {
+      "url": "http://127.0.0.1:14172/drama/11/episode/1",
+      "badge": "正在生成",
+      "hasMask": true,
+      "hasImg": false,
+      "err": ""
+    },
+    "firstPost": {
+      "at": "2026-11-04T07:07:27.947Z",
+      "url": "http://127.0.0.1:14172/api/v1/costumes/15/generate-image",
+      "body": {
+        "episode_id": 12,
+        "use_character_reference": false
+      },
+      "isMock": false
+    },
+    "finalUi": {
+      "url": "http://127.0.0.1:14172/drama/11/episode/1",
+      "badge": "已生成",
+      "hasMask": false,
+      "hasImg": true,
+      "imgSrc": "http://127.0.0.1:14172/static/images/1c967c71-354b-4353-b18b-9267288b8c91.png?_zg=9",
+      "err": ""
+    },
+    "finalApi": {
+      "row": {
+        "id": 15,
+        "character_id": 18,
+        "drama_id": 11,
+        "name": "LiveOnce-041695",
+        "description": "cobalt blue ceremonial cloak with silver clasp and white trim unique-041695",
+        "use_character_reference": false,
+        "image_url": "static/images/1c967c71-354b-4353-b18b-9267288b8c91.png",
+        "local_path": "static/images/1c967c71-354b-4353-b18b-9267288b8c91.png",
+        "reference_images": null,
+        "prompt": null,
+        "final_prompt": "character 蕾欧娜, costume: LiveOnce-041695, cobalt blue ceremonial cloak with silver clasp and white trim unique-041695, full body costume reference sheet, clean background",
+        "sort_order": 0,
+        "status": "ready",
+        "result_source": "model",
+        "image_source": "model",
+        "task_id": 92,
+        "error_message": null,
+        "progress": 100,
+        "is_selected": false,
+        "created_at": "2026-11-04T07:07:21.700Z",
+        "updated_at": "2026-11-04T07:08:09.165Z"
+      },
+      "url": "http://127.0.0.1:14172/drama/11/episode/1"
+    },
+    "imagePath": "C:\\Users\\Administrator\\AppData\\Roaming\\ZhuiguangDramaAI\\data\\static\\images\\1c967c71-354b-4353-b18b-9267288b8c91.png",
+    "imageSha1": "c14a2b770a1688ebf157ec433de586818ae98145",
+    "portraitSha1": "8cacdeec56e51d76bd6cf9a31f77747148cc7d17",
+    "taskProbe": [
+      {
+        "u": "/api/v1/tasks/92",
+        "status": 200,
+        "head": "{\"code\":200,\"data\":{\"id\":92,\"type\":\"image\",\"storyboardId\":null,\"dramaId\":11,\"sceneId\":null,\"characterId\":null,\"propId\":null,\"provider\":\"openai\",\"prompt\":\"character 蕾欧娜, costume: LiveOnce-041695, cobalt blue ceremonial cloak with silver clasp and white trim unique-041695, full body costume reference "
+      },
+      {
+        "u": "/api/v1/sys-task/92",
+        "status": 200,
+        "head": "<!DOCTYPE html><html><head><meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<title>追光影视</title>\n<link rel=\"stylesheet\" href=\"/_nuxt/entry.BonBRxhi.css\" crossorigin>\n<link rel=\"modulepreload\" as=\"script\" crossorigin href=\"/_nuxt/Bm-YphX6.js\">\n<script type=\"m"
+      },
+      {
+        "u": "/api/v1/task/92",
+        "status": 200,
+        "head": "<!DOCTYPE html><html><head><meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<title>追光影视</title>\n<link rel=\"stylesheet\" href=\"/_nuxt/entry.BonBRxhi.css\" crossorigin>\n<link rel=\"modulepreload\" as=\"script\" crossorigin href=\"/_nuxt/Bm-YphX6.js\">\n<script type=\"m"
+      }
+    ],
+    "dbCostume": {
+      "id": 15,
+      "name": "LiveOnce-041695",
+      "description": "cobalt blue ceremonial cloak with silver clasp and white trim unique-041695",
+      "status": "ready",
+      "result_source": "model",
+      "task_id": 92,
+      "image_url": "static/images/1c967c71-354b-4353-b18b-9267288b8c91.png",
+      "local_path": "static/images/1c967c71-354b-4353-b18b-9267288b8c91.png",
+      "final_prompt": "character 蕾欧娜, costume: LiveOnce-041695, cobalt blue ceremonial cloak with silver clasp and white trim unique-041695, full body costume reference sheet, clean background",
+      "error_message": null,
+      "progress": 100
+    },
+    "dbTask": {
+      "id": 92,
+      "type": "image",
+      "status": "completed",
+      "provider": "openai",
+      "model": "gpt-image-2.5-flare",
+      "prompt": "character 蕾欧娜, costume: LiveOnce-041695, cobalt blue ceremonial cloak with silver clasp and white trim unique-041695, full body costume reference sheet, clean background",
+      "params": "{\"size\":\"1024x1024\",\"costumeId\":15}",
+      "remote_task_id": "img_6695537ec08e5c40a7256f2b",
+      "result_url": "https://img.kovapi.com/i/70d4290185c043757735d8f8d904e3e5.png",
+      "local_path": "static/images/1c967c71-354b-4353-b18b-9267288b8c91.png",
+      "error_msg": null,
+      "created_at": "2026-11-04T07:07:27.951Z",
+      "updated_at": "2026-11-04T07:08:09.165Z",
+      "completed_at": "2026-11-04T07:08:09.165Z",
+      "character_id": null,
+      "drama_id": 11
+    },
+    "imageModelConfigured": "gpt-image-2.5-flare",
+    "imageProviderConfigured": "NezhaGate / openai via kovapi"
+  },
+  "notes": [
+    "startUrl=http://127.0.0.1:14172/drama/11/episode/1",
+    "refresh=helpers="
+  ],
+  "error": null,
+  "finishedAt": "2026-11-04T07:08:13.957Z",
+  "summary": {
+    "PASS": true,
+    "costumeId": 15,
+    "costumeName": "LiveOnce-041695",
+    "task_id": 92,
+    "result_source": "model",
+    "status": "ready",
+    "model": "gpt-image-2.5-flare",
+    "provider": "openai",
+    "badge": "已生成",
+    "immediateGenerating": true,
+    "sameUrlNoNav": true,
+    "promptMatchesDesc": true,
+    "imageSha1": "c14a2b770a1688ebf157ec433de586818ae98145",
+    "portraitSha1": "8cacdeec56e51d76bd6cf9a31f77747148cc7d17",
+    "imageNotPortrait": true,
+    "paidCalls": 1,
+    "requestBody": {
+      "episode_id": 12,
+      "use_character_reference": false
+    },
+    "final_prompt": "character 蕾欧娜, costume: LiveOnce-041695, cobalt blue ceremonial cloak with silver clasp and white trim unique-041695, full body costume reference sheet, clean background",
+    "url": "http://127.0.0.1:14172/drama/11/episode/1"
+  }
+}

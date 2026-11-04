@@ -1,0 +1,1003 @@
+{
+  "startedAt": "2026-11-04T06:41:20.461Z",
+  "paidCalls": 0,
+  "results": {
+    "A_source_no_default_mock": true,
+    "B_poll_requires_model": true,
+    "B_writeback_model": true,
+    "C_fe_select_msg": true,
+    "C_be_no_char_update": true,
+    "C_be_vce_model_only": true,
+    "D_fe_no_forced_ref": true,
+    "D_be_row_first": true,
+    "E_stub_no_abs": true,
+    "D_create_useRef_false": true,
+    "A_non_mock_enters_real_path": true,
+    "A_blocked_no_charge": true,
+    "D_refs_empty_on_useRef0": true,
+    "mock_result_source_mock": true,
+    "B_empty_source_not_ready_badge": true,
+    "C_mock_select_char_unchanged": true,
+    "C_model_select_char_unchanged": true,
+    "C_model_is_selected": true,
+    "D_refs_present_when_row_true": true,
+    "regression_smoke": {
+      "charCount": 21,
+      "sceneCount": 11,
+      "ok": true
+    }
+  },
+  "evidence": {
+    "charId": 2,
+    "charBefore": {
+      "image_url": "static/images/22092b6d-fd7f-450f-b59b-6d36961646e7.png",
+      "local_path": null
+    },
+    "createdId": 15,
+    "lastGenParams": {
+      "dramaId": 11,
+      "prompt": "character 林战, costume: AE-Test-NoRef-480622, audit test robe with brass buttons, full body costume reference sheet, clean background",
+      "size": "1024x1024",
+      "referenceImages": [
+        "static/images/22092b6d-fd7f-450f-b59b-6d36961646e7.png"
+      ],
+      "costumeId": 15
+    },
+    "realAttempt": {
+      "status": 400,
+      "body": {
+        "code": 400,
+        "message": "test-block-paid",
+        "data": null
+      },
+      "paidDelta": 1,
+      "params": {
+        "dramaId": 11,
+        "prompt": "character 林战, costume: AE-Test-NoRef-480622, audit test robe with brass buttons, full body costume reference sheet, clean background",
+        "size": "1024x1024",
+        "costumeId": 15
+      }
+    },
+    "mockResKeys": [
+      "mock",
+      "synthetic",
+      "costume",
+      "image_generation_id",
+      "built_prompt",
+      "desc_hash"
+    ],
+    "mockRow": {
+      "result_source": "mock",
+      "local_path": "static/images/costume-mock-15-05ffd66d66b2c019-aa2aff8c.png",
+      "image_url": "static/images/costume-mock-15-05ffd66d66b2c019-aa2aff8c.png",
+      "final_prompt": "character 林战, costume: AE-Test-NoRef-480622, audit test robe with brass buttons, full body costume reference sheet, clean background"
+    },
+    "modelCostumeId": 3
+  },
+  "backup": "C:\\\\Users\\\\Administrator\\\\agent-tools\\\\zg-costume-audit-AE-fix-bak-20261104-143520",
+  "notLivePaidTested": [
+    "δ����ʵ����ģ�ͷ���ɹ���������ʵ���ֿ۷�",
+    "��·������֤�� generateImage �����ú����� test-block-paid / UI �� abort �� mock ����",
+    "ImageTask �ɹ���д result_source=model �Ķ˵�����һ����ʵ���������ܹ۲죨Դ���Ѹģ�����δ������ͨ��"
+  ],
+  "notes": [
+    "testServerPort=7243"
+  ],
+  "endedAt": "2026-11-04T06:41:20.711Z",
+  "ui": {
+    "startedAt": "2026-11-04T06:49:03.314Z",
+    "shots": [
+      {
+        "name": "00-episode.png",
+        "at": "2026-11-04T06:49:07.033Z",
+        "url": "http://127.0.0.1:14172/drama/11/episode/1"
+      },
+      {
+        "name": "01-characters.png",
+        "at": "2026-11-04T06:49:14.184Z",
+        "url": "http://127.0.0.1:14172/drama/11/episode/1"
+      },
+      {
+        "name": "02-character-detail.png",
+        "at": "2026-11-04T06:49:20.368Z",
+        "url": "http://127.0.0.1:14172/drama/11/episode/1"
+      },
+      {
+        "name": "03-after-select.png",
+        "at": "2026-11-04T06:49:25.463Z",
+        "url": "http://127.0.0.1:14172/drama/11/episode/1",
+        "selectName": "战斗服",
+        "coverUnchanged": true
+      },
+      {
+        "name": "04-default-gen-intercept.png",
+        "at": "2026-11-04T06:49:30.542Z",
+        "url": "http://127.0.0.1:14172/drama/11/episode/1",
+        "bodies": [
+          "{\"episode_id\":12,\"use_character_reference\":true}"
+        ],
+        "cards": [
+          {
+            "name": "战斗服",
+            "badge": "已生成",
+            "badgeClass": "zg-costume-badge is-ready",
+            "hasImg": true,
+            "btns": [
+              "重新生成",
+              "已选择",
+              "删除"
+            ]
+          },
+          {
+            "name": "原始人服装",
+            "badge": "已生成",
+            "badgeClass": "zg-costume-badge is-ready",
+            "hasImg": true,
+            "btns": [
+              "重新生成",
+              "选择",
+              "删除"
+            ]
+          },
+          {
+            "name": "反应测-364373",
+            "badge": "失败",
+            "badgeClass": "zg-costume-badge is-error",
+            "hasImg": false,
+            "btns": [
+              "生成服装图",
+              "选择",
+              "删除"
+            ]
+          },
+          {
+            "name": "SamePageAdd-0070",
+            "badge": "待生成",
+            "badgeClass": "zg-costume-badge is-idle",
+            "hasImg": false,
+            "btns": [
+              "生成服装图",
+              "选择",
+              "删除"
+            ]
+          },
+          {
+            "name": "FailPath-3520",
+            "badge": "待生成",
+            "badgeClass": "zg-costume-badge is-idle",
+            "hasImg": false,
+            "btns": [
+              "生成服装图",
+              "选择",
+              "删除"
+            ]
+          },
+          {
+            "name": "LiveAdd-97341",
+            "badge": "待生成",
+            "badgeClass": "zg-costume-badge is-idle",
+            "hasImg": false,
+            "btns": [
+              "生成服装图",
+              "选择",
+              "删除"
+            ]
+          },
+          {
+            "name": "LiveFail-02867",
+            "badge": "待生成",
+            "badgeClass": "zg-costume-badge is-idle",
+            "hasImg": false,
+            "btns": [
+              "生成服装图",
+              "选择",
+              "删除"
+            ]
+          },
+          {
+            "name": "SemMock-50977",
+            "badge": "占位图",
+            "badgeClass": "zg-costume-badge is-placeholder",
+            "hasImg": true,
+            "btns": [
+              "重新生成",
+              "选择",
+              "删除"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "05-after-explicit-mock.png",
+        "at": "2026-11-04T06:49:37.718Z",
+        "url": "http://127.0.0.1:14172/drama/11/episode/1",
+        "cards": [
+          {
+            "name": "战斗服",
+            "badge": "已生成",
+            "badgeClass": "zg-costume-badge is-ready",
+            "hasImg": true,
+            "btns": [
+              "重新生成",
+              "已选择",
+              "删除"
+            ]
+          },
+          {
+            "name": "原始人服装",
+            "badge": "已生成",
+            "badgeClass": "zg-costume-badge is-ready",
+            "hasImg": true,
+            "btns": [
+              "重新生成",
+              "选择",
+              "删除"
+            ]
+          },
+          {
+            "name": "反应测-364373",
+            "badge": "占位图",
+            "badgeClass": "zg-costume-badge is-placeholder",
+            "hasImg": true,
+            "btns": [
+              "重新生成",
+              "选择",
+              "删除"
+            ]
+          },
+          {
+            "name": "SamePageAdd-0070",
+            "badge": "待生成",
+            "badgeClass": "zg-costume-badge is-idle",
+            "hasImg": false,
+            "btns": [
+              "生成服装图",
+              "选择",
+              "删除"
+            ]
+          },
+          {
+            "name": "FailPath-3520",
+            "badge": "待生成",
+            "badgeClass": "zg-costume-badge is-idle",
+            "hasImg": false,
+            "btns": [
+              "生成服装图",
+              "选择",
+              "删除"
+            ]
+          },
+          {
+            "name": "LiveAdd-97341",
+            "badge": "待生成",
+            "badgeClass": "zg-costume-badge is-idle",
+            "hasImg": false,
+            "btns": [
+              "生成服装图",
+              "选择",
+              "删除"
+            ]
+          },
+          {
+            "name": "LiveFail-02867",
+            "badge": "待生成",
+            "badgeClass": "zg-costume-badge is-idle",
+            "hasImg": false,
+            "btns": [
+              "生成服装图",
+              "选择",
+              "删除"
+            ]
+          },
+          {
+            "name": "SemMock-50977",
+            "badge": "占位图",
+            "badgeClass": "zg-costume-badge is-placeholder",
+            "hasImg": true,
+            "btns": [
+              "重新生成",
+              "选择",
+              "删除"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "06-scenes-regression.png",
+        "at": "2026-11-04T06:49:44.547Z",
+        "url": "http://127.0.0.1:14172/drama/11/episode/1"
+      }
+    ],
+    "navigationEvents": [
+      {
+        "at": "2026-11-04T06:49:03.354Z",
+        "url": "http://127.0.0.1:14172/"
+      },
+      {
+        "at": "2026-11-04T06:49:03.354Z",
+        "url": "http://127.0.0.1:14172/drama/11/episode/1"
+      },
+      {
+        "at": "2026-11-04T06:49:03.378Z",
+        "url": "http://127.0.0.1:14172/drama/11/episode/1"
+      },
+      {
+        "at": "2026-11-04T06:49:03.400Z",
+        "url": "http://127.0.0.1:14172/drama/11/episode/1"
+      },
+      {
+        "at": "2026-11-04T06:49:03.402Z",
+        "url": "http://127.0.0.1:14172/drama/11/episode/1"
+      }
+    ],
+    "requests": [
+      {
+        "body": "{\"episode_id\":12,\"use_character_reference\":true,\"mock\":true,\"mock_delay_ms\":900}"
+      }
+    ],
+    "paidCalls": 0,
+    "results": {
+      "initialCards": [
+        {
+          "name": "战斗服",
+          "badge": "已生成",
+          "badgeClass": "zg-costume-badge is-ready",
+          "hasImg": true,
+          "btns": [
+            "重新生成",
+            "已选择",
+            "删除"
+          ]
+        },
+        {
+          "name": "原始人服装",
+          "badge": "已生成",
+          "badgeClass": "zg-costume-badge is-ready",
+          "hasImg": true,
+          "btns": [
+            "重新生成",
+            "选择",
+            "删除"
+          ]
+        },
+        {
+          "name": "反应测-364373",
+          "badge": "待生成",
+          "badgeClass": "zg-costume-badge is-idle",
+          "hasImg": false,
+          "btns": [
+            "生成服装图",
+            "选择",
+            "删除"
+          ]
+        },
+        {
+          "name": "SamePageAdd-0070",
+          "badge": "待生成",
+          "badgeClass": "zg-costume-badge is-idle",
+          "hasImg": false,
+          "btns": [
+            "生成服装图",
+            "选择",
+            "删除"
+          ]
+        },
+        {
+          "name": "FailPath-3520",
+          "badge": "待生成",
+          "badgeClass": "zg-costume-badge is-idle",
+          "hasImg": false,
+          "btns": [
+            "生成服装图",
+            "选择",
+            "删除"
+          ]
+        },
+        {
+          "name": "LiveAdd-97341",
+          "badge": "待生成",
+          "badgeClass": "zg-costume-badge is-idle",
+          "hasImg": false,
+          "btns": [
+            "生成服装图",
+            "选择",
+            "删除"
+          ]
+        },
+        {
+          "name": "LiveFail-02867",
+          "badge": "待生成",
+          "badgeClass": "zg-costume-badge is-idle",
+          "hasImg": false,
+          "btns": [
+            "生成服装图",
+            "选择",
+            "删除"
+          ]
+        },
+        {
+          "name": "SemMock-50977",
+          "badge": "占位图",
+          "badgeClass": "zg-costume-badge is-placeholder",
+          "hasImg": true,
+          "btns": [
+            "重新生成",
+            "选择",
+            "删除"
+          ]
+        }
+      ],
+      "selectName": "战斗服",
+      "coverUnchanged": true,
+      "defaultGenClick": {
+        "name": "反应测-364373",
+        "badge": "待生成"
+      },
+      "defaultGenBodies": [
+        "{\"episode_id\":12,\"use_character_reference\":true}"
+      ],
+      "defaultGenNoMock": true,
+      "mockClick": "反应测-364373",
+      "afterMockCards": [
+        {
+          "name": "战斗服",
+          "badge": "已生成",
+          "badgeClass": "zg-costume-badge is-ready",
+          "hasImg": true,
+          "btns": [
+            "重新生成",
+            "已选择",
+            "删除"
+          ]
+        },
+        {
+          "name": "原始人服装",
+          "badge": "已生成",
+          "badgeClass": "zg-costume-badge is-ready",
+          "hasImg": true,
+          "btns": [
+            "重新生成",
+            "选择",
+            "删除"
+          ]
+        },
+        {
+          "name": "反应测-364373",
+          "badge": "占位图",
+          "badgeClass": "zg-costume-badge is-placeholder",
+          "hasImg": true,
+          "btns": [
+            "重新生成",
+            "选择",
+            "删除"
+          ]
+        },
+        {
+          "name": "SamePageAdd-0070",
+          "badge": "待生成",
+          "badgeClass": "zg-costume-badge is-idle",
+          "hasImg": false,
+          "btns": [
+            "生成服装图",
+            "选择",
+            "删除"
+          ]
+        },
+        {
+          "name": "FailPath-3520",
+          "badge": "待生成",
+          "badgeClass": "zg-costume-badge is-idle",
+          "hasImg": false,
+          "btns": [
+            "生成服装图",
+            "选择",
+            "删除"
+          ]
+        },
+        {
+          "name": "LiveAdd-97341",
+          "badge": "待生成",
+          "badgeClass": "zg-costume-badge is-idle",
+          "hasImg": false,
+          "btns": [
+            "生成服装图",
+            "选择",
+            "删除"
+          ]
+        },
+        {
+          "name": "LiveFail-02867",
+          "badge": "待生成",
+          "badgeClass": "zg-costume-badge is-idle",
+          "hasImg": false,
+          "btns": [
+            "生成服装图",
+            "选择",
+            "删除"
+          ]
+        },
+        {
+          "name": "SemMock-50977",
+          "badge": "占位图",
+          "badgeClass": "zg-costume-badge is-placeholder",
+          "hasImg": true,
+          "btns": [
+            "重新生成",
+            "选择",
+            "删除"
+          ]
+        }
+      ],
+      "sceneImgCount": 10
+    },
+    "notes": [
+      "startUrl=http://127.0.0.1:14172/ origin=http://127.0.0.1:14172",
+      "intercepted={\"episode_id\":12,\"use_character_reference\":true}"
+    ],
+    "endedAt": "2026-11-04T06:49:44.547Z"
+  },
+  "uiEvidence": {
+    "startedAt": "2026-11-04T06:49:03.314Z",
+    "shots": [
+      {
+        "name": "00-episode.png",
+        "at": "2026-11-04T06:49:07.033Z",
+        "url": "http://127.0.0.1:14172/drama/11/episode/1"
+      },
+      {
+        "name": "01-characters.png",
+        "at": "2026-11-04T06:49:14.184Z",
+        "url": "http://127.0.0.1:14172/drama/11/episode/1"
+      },
+      {
+        "name": "02-character-detail.png",
+        "at": "2026-11-04T06:49:20.368Z",
+        "url": "http://127.0.0.1:14172/drama/11/episode/1"
+      },
+      {
+        "name": "03-after-select.png",
+        "at": "2026-11-04T06:49:25.463Z",
+        "url": "http://127.0.0.1:14172/drama/11/episode/1",
+        "selectName": "战斗服",
+        "coverUnchanged": true
+      },
+      {
+        "name": "04-default-gen-intercept.png",
+        "at": "2026-11-04T06:49:30.542Z",
+        "url": "http://127.0.0.1:14172/drama/11/episode/1",
+        "bodies": [
+          "{\"episode_id\":12,\"use_character_reference\":true}"
+        ],
+        "cards": [
+          {
+            "name": "战斗服",
+            "badge": "已生成",
+            "badgeClass": "zg-costume-badge is-ready",
+            "hasImg": true,
+            "btns": [
+              "重新生成",
+              "已选择",
+              "删除"
+            ]
+          },
+          {
+            "name": "原始人服装",
+            "badge": "已生成",
+            "badgeClass": "zg-costume-badge is-ready",
+            "hasImg": true,
+            "btns": [
+              "重新生成",
+              "选择",
+              "删除"
+            ]
+          },
+          {
+            "name": "反应测-364373",
+            "badge": "失败",
+            "badgeClass": "zg-costume-badge is-error",
+            "hasImg": false,
+            "btns": [
+              "生成服装图",
+              "选择",
+              "删除"
+            ]
+          },
+          {
+            "name": "SamePageAdd-0070",
+            "badge": "待生成",
+            "badgeClass": "zg-costume-badge is-idle",
+            "hasImg": false,
+            "btns": [
+              "生成服装图",
+              "选择",
+              "删除"
+            ]
+          },
+          {
+            "name": "FailPath-3520",
+            "badge": "待生成",
+            "badgeClass": "zg-costume-badge is-idle",
+            "hasImg": false,
+            "btns": [
+              "生成服装图",
+              "选择",
+              "删除"
+            ]
+          },
+          {
+            "name": "LiveAdd-97341",
+            "badge": "待生成",
+            "badgeClass": "zg-costume-badge is-idle",
+            "hasImg": false,
+            "btns": [
+              "生成服装图",
+              "选择",
+              "删除"
+            ]
+          },
+          {
+            "name": "LiveFail-02867",
+            "badge": "待生成",
+            "badgeClass": "zg-costume-badge is-idle",
+            "hasImg": false,
+            "btns": [
+              "生成服装图",
+              "选择",
+              "删除"
+            ]
+          },
+          {
+            "name": "SemMock-50977",
+            "badge": "占位图",
+            "badgeClass": "zg-costume-badge is-placeholder",
+            "hasImg": true,
+            "btns": [
+              "重新生成",
+              "选择",
+              "删除"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "05-after-explicit-mock.png",
+        "at": "2026-11-04T06:49:37.718Z",
+        "url": "http://127.0.0.1:14172/drama/11/episode/1",
+        "cards": [
+          {
+            "name": "战斗服",
+            "badge": "已生成",
+            "badgeClass": "zg-costume-badge is-ready",
+            "hasImg": true,
+            "btns": [
+              "重新生成",
+              "已选择",
+              "删除"
+            ]
+          },
+          {
+            "name": "原始人服装",
+            "badge": "已生成",
+            "badgeClass": "zg-costume-badge is-ready",
+            "hasImg": true,
+            "btns": [
+              "重新生成",
+              "选择",
+              "删除"
+            ]
+          },
+          {
+            "name": "反应测-364373",
+            "badge": "占位图",
+            "badgeClass": "zg-costume-badge is-placeholder",
+            "hasImg": true,
+            "btns": [
+              "重新生成",
+              "选择",
+              "删除"
+            ]
+          },
+          {
+            "name": "SamePageAdd-0070",
+            "badge": "待生成",
+            "badgeClass": "zg-costume-badge is-idle",
+            "hasImg": false,
+            "btns": [
+              "生成服装图",
+              "选择",
+              "删除"
+            ]
+          },
+          {
+            "name": "FailPath-3520",
+            "badge": "待生成",
+            "badgeClass": "zg-costume-badge is-idle",
+            "hasImg": false,
+            "btns": [
+              "生成服装图",
+              "选择",
+              "删除"
+            ]
+          },
+          {
+            "name": "LiveAdd-97341",
+            "badge": "待生成",
+            "badgeClass": "zg-costume-badge is-idle",
+            "hasImg": false,
+            "btns": [
+              "生成服装图",
+              "选择",
+              "删除"
+            ]
+          },
+          {
+            "name": "LiveFail-02867",
+            "badge": "待生成",
+            "badgeClass": "zg-costume-badge is-idle",
+            "hasImg": false,
+            "btns": [
+              "生成服装图",
+              "选择",
+              "删除"
+            ]
+          },
+          {
+            "name": "SemMock-50977",
+            "badge": "占位图",
+            "badgeClass": "zg-costume-badge is-placeholder",
+            "hasImg": true,
+            "btns": [
+              "重新生成",
+              "选择",
+              "删除"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "06-scenes-regression.png",
+        "at": "2026-11-04T06:49:44.547Z",
+        "url": "http://127.0.0.1:14172/drama/11/episode/1"
+      }
+    ],
+    "navigationEvents": [
+      {
+        "at": "2026-11-04T06:49:03.354Z",
+        "url": "http://127.0.0.1:14172/"
+      },
+      {
+        "at": "2026-11-04T06:49:03.354Z",
+        "url": "http://127.0.0.1:14172/drama/11/episode/1"
+      },
+      {
+        "at": "2026-11-04T06:49:03.378Z",
+        "url": "http://127.0.0.1:14172/drama/11/episode/1"
+      },
+      {
+        "at": "2026-11-04T06:49:03.400Z",
+        "url": "http://127.0.0.1:14172/drama/11/episode/1"
+      },
+      {
+        "at": "2026-11-04T06:49:03.402Z",
+        "url": "http://127.0.0.1:14172/drama/11/episode/1"
+      }
+    ],
+    "requests": [
+      {
+        "body": "{\"episode_id\":12,\"use_character_reference\":true,\"mock\":true,\"mock_delay_ms\":900}"
+      }
+    ],
+    "paidCalls": 0,
+    "results": {
+      "initialCards": [
+        {
+          "name": "战斗服",
+          "badge": "已生成",
+          "badgeClass": "zg-costume-badge is-ready",
+          "hasImg": true,
+          "btns": [
+            "重新生成",
+            "已选择",
+            "删除"
+          ]
+        },
+        {
+          "name": "原始人服装",
+          "badge": "已生成",
+          "badgeClass": "zg-costume-badge is-ready",
+          "hasImg": true,
+          "btns": [
+            "重新生成",
+            "选择",
+            "删除"
+          ]
+        },
+        {
+          "name": "反应测-364373",
+          "badge": "待生成",
+          "badgeClass": "zg-costume-badge is-idle",
+          "hasImg": false,
+          "btns": [
+            "生成服装图",
+            "选择",
+            "删除"
+          ]
+        },
+        {
+          "name": "SamePageAdd-0070",
+          "badge": "待生成",
+          "badgeClass": "zg-costume-badge is-idle",
+          "hasImg": false,
+          "btns": [
+            "生成服装图",
+            "选择",
+            "删除"
+          ]
+        },
+        {
+          "name": "FailPath-3520",
+          "badge": "待生成",
+          "badgeClass": "zg-costume-badge is-idle",
+          "hasImg": false,
+          "btns": [
+            "生成服装图",
+            "选择",
+            "删除"
+          ]
+        },
+        {
+          "name": "LiveAdd-97341",
+          "badge": "待生成",
+          "badgeClass": "zg-costume-badge is-idle",
+          "hasImg": false,
+          "btns": [
+            "生成服装图",
+            "选择",
+            "删除"
+          ]
+        },
+        {
+          "name": "LiveFail-02867",
+          "badge": "待生成",
+          "badgeClass": "zg-costume-badge is-idle",
+          "hasImg": false,
+          "btns": [
+            "生成服装图",
+            "选择",
+            "删除"
+          ]
+        },
+        {
+          "name": "SemMock-50977",
+          "badge": "占位图",
+          "badgeClass": "zg-costume-badge is-placeholder",
+          "hasImg": true,
+          "btns": [
+            "重新生成",
+            "选择",
+            "删除"
+          ]
+        }
+      ],
+      "selectName": "战斗服",
+      "coverUnchanged": true,
+      "defaultGenClick": {
+        "name": "反应测-364373",
+        "badge": "待生成"
+      },
+      "defaultGenBodies": [
+        "{\"episode_id\":12,\"use_character_reference\":true}"
+      ],
+      "defaultGenNoMock": true,
+      "mockClick": "反应测-364373",
+      "afterMockCards": [
+        {
+          "name": "战斗服",
+          "badge": "已生成",
+          "badgeClass": "zg-costume-badge is-ready",
+          "hasImg": true,
+          "btns": [
+            "重新生成",
+            "已选择",
+            "删除"
+          ]
+        },
+        {
+          "name": "原始人服装",
+          "badge": "已生成",
+          "badgeClass": "zg-costume-badge is-ready",
+          "hasImg": true,
+          "btns": [
+            "重新生成",
+            "选择",
+            "删除"
+          ]
+        },
+        {
+          "name": "反应测-364373",
+          "badge": "占位图",
+          "badgeClass": "zg-costume-badge is-placeholder",
+          "hasImg": true,
+          "btns": [
+            "重新生成",
+            "选择",
+            "删除"
+          ]
+        },
+        {
+          "name": "SamePageAdd-0070",
+          "badge": "待生成",
+          "badgeClass": "zg-costume-badge is-idle",
+          "hasImg": false,
+          "btns": [
+            "生成服装图",
+            "选择",
+            "删除"
+          ]
+        },
+        {
+          "name": "FailPath-3520",
+          "badge": "待生成",
+          "badgeClass": "zg-costume-badge is-idle",
+          "hasImg": false,
+          "btns": [
+            "生成服装图",
+            "选择",
+            "删除"
+          ]
+        },
+        {
+          "name": "LiveAdd-97341",
+          "badge": "待生成",
+          "badgeClass": "zg-costume-badge is-idle",
+          "hasImg": false,
+          "btns": [
+            "生成服装图",
+            "选择",
+            "删除"
+          ]
+        },
+        {
+          "name": "LiveFail-02867",
+          "badge": "待生成",
+          "badgeClass": "zg-costume-badge is-idle",
+          "hasImg": false,
+          "btns": [
+            "生成服装图",
+            "选择",
+            "删除"
+          ]
+        },
+        {
+          "name": "SemMock-50977",
+          "badge": "占位图",
+          "badgeClass": "zg-costume-badge is-placeholder",
+          "hasImg": true,
+          "btns": [
+            "重新生成",
+            "选择",
+            "删除"
+          ]
+        }
+      ],
+      "sceneImgCount": 10
+    },
+    "notes": [
+      "startUrl=http://127.0.0.1:14172/ origin=http://127.0.0.1:14172",
+      "intercepted={\"episode_id\":12,\"use_character_reference\":true}"
+    ],
+    "endedAt": "2026-11-04T06:49:44.547Z"
+  },
+  "summary": {
+    "A": "FE default no mock; UI intercepted POST {episode_id,use_character_reference} without mock; explicit mock via __ZG_COSTUME_GEN_OPTS still works (ռλͼ)",
+    "B": "asar ImageTask writeback now sets status=ready,progress=100,result_source=model; poll requires result_source===model",
+    "C": "select never updates characters cover; VCE only when result_source=model; UI coverUnchanged=true after selecting ս����",
+    "D": "FE no forced use_character_reference:!0; payload follows row; BE create defaults false; generate useRef follows row with body override",
+    "E": "asar stub no Administrator absolute path; resourcesPath + __dirname relatives only"
+  },
+  "filesChanged": [
+    "resources/frontend/_nuxt/D2CsWkmv.js",
+    "resources/app.asar.unpacked/costume/costume-mount-full.js (+twins)",
+    "resources/app.asar (in-place: costume/costume-mount.js stub + backend.mjs writeback)"
+  ]
+}
