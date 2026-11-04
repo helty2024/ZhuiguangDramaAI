@@ -10,5 +10,12 @@
   "portable-fe/D2CsWkmv.js": {
     "bytes": 180975,
     "sha256": "e3affba26c1d6eec4c5abe38d6dd8a4274ca487bdb7fec931d9bb6db2a648dab"
-  }
+  },
+  "version_note": "2.4.3 Win Setup + portable DEV costume A-E",
+  "setup_sha256": "2c4dbf75974b658c3518cea223e54df06638ca6895c482301da6eddc72192936",
+  "portable_app_asar": "124e33a16275f9c6131ff09c6aae334cd0923c1030743874b41a42be64a04bbb",
+  "source_asar_2_4_3": "1c9ab9b0dbf861c0ff9b2d31c2f2cb643f9cf2d4abb9931b0fec186e52cf9686",
+  "D2CsWkmv.js": "e3affba26c1d6eec4c5abe38d6dd8a4274ca487bdb7fec931d9bb6db2a648dab",
+  "5IhsqtEn.js": "b16beefbacaffda5d7e7ff8a0572adc8ede63f72b2b0225fa2331369eb22786a",
+  "costume-mount-full.js": "7fb5ba5fcb7b4fe5ba9892ab2fe01b550fe486991a60af6e3b5d91333c135341"
 }

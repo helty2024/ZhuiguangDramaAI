@@ -1,6 +1,6 @@
 {
   "name": "@zhuiguang/costume-pipeline",
-  "version": "1.0.0",
+  "version": "2.4.3",
   "private": true,
   "description": "Maintainable costume asset pipeline source + unpaid regression tests for ZhuiguangDramaAI",
   "main": "src/index.js",
